@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  .dictionary__app{
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.45);
+    width: 500px;
+    margin: 50px auto;
+    padding: 10px;
+    position: relative;
+    input{
+      outline: none;
+      border: none;
+      padding: 12px;
+      border-bottom: 1px solid;
+      font-family: 'Poppins', sans-serif;
+      width: 80%;
+      font-size: 16px;
+      letter-spacing: 1.5px;
+    }
+    button.send{
+      display: inline-block;
+      padding: 12px;
+      font-family: 'Poppins', sans-serif;
+      border: none;
+      outline: none;
+      letter-spacing: 1.5px;
+      background-color: unset;
+      cursor: pointer;
+      i{
+        font-size: 20px;
+      }
+    }
+    .loading{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .resultDictionary{
+      width: 100%;
+      margin: 10px 0px;
+      font-family: 'Poppins', sans-serif;
+      .titleAudio{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button.btnAudio{
+          display: inline-block;
+          padding: 5px;
+          outline: none;
+          border: none;
+          background-color: unset;
+          width: 40px;
+          cursor: pointer;
+          img{
+            pointer-events: none;
+            width: 100%;
+          }
+        }
+      }
+      .textMeanings{
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        p{
+          font-size: 13px;
+          margin: 0px 5px;
+          font-style: italic;
+        }
+      }
+      .meaningText{
+        margin: 10px 0px;
+      }
+    }
+  }
+}
+@media screen and (max-width:570px) {
+  .container{
+    width: 100%;
+    padding: 0px 10px;
+    .dictionary__app{
+      width: 100%;
+    }
+  }
+}

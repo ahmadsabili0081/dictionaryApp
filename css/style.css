@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container .dictionary__app {
+  -webkit-box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.45);
+          box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.45);
+  width: 500px;
+  margin: 50px auto;
+  padding: 10px;
+  position: relative;
+}
+
+.container .dictionary__app input {
+  outline: none;
+  border: none;
+  padding: 12px;
+  border-bottom: 1px solid;
+  font-family: 'Poppins', sans-serif;
+  width: 80%;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+
+.container .dictionary__app button.send {
+  display: inline-block;
+  padding: 12px;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  outline: none;
+  letter-spacing: 1.5px;
+  background-color: unset;
+  cursor: pointer;
+}
+
+.container .dictionary__app button.send i {
+  font-size: 20px;
+}
+
+.container .dictionary__app .loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .dictionary__app .resultDictionary {
+  width: 100%;
+  margin: 10px 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container .dictionary__app .resultDictionary .titleAudio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .dictionary__app .resultDictionary .titleAudio button.btnAudio {
+  display: inline-block;
+  padding: 5px;
+  outline: none;
+  border: none;
+  background-color: unset;
+  width: 40px;
+  cursor: pointer;
+}
+
+.container .dictionary__app .resultDictionary .titleAudio button.btnAudio img {
+  pointer-events: none;
+  width: 100%;
+}
+
+.container .dictionary__app .resultDictionary .textMeanings {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .dictionary__app .resultDictionary .textMeanings p {
+  font-size: 13px;
+  margin: 0px 5px;
+  font-style: italic;
+}
+
+.container .dictionary__app .resultDictionary .meaningText {
+  margin: 10px 0px;
+}
+
+@media screen and (max-width: 570px) {
+  .container {
+    width: 100%;
+    padding: 0px 10px;
+  }
+  .container .dictionary__app {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
